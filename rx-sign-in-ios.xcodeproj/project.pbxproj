@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D8682F941F8D298A908C41D /* Pods_rx_sign_in_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */; };
 		D2F08AE92263A93D0036849B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AE82263A93D0036849B /* AppDelegate.swift */; };
 		D2F08AEB2263A93D0036849B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AEA2263A93D0036849B /* ViewController.swift */; };
 		D2F08AEE2263A93D0036849B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AEC2263A93D0036849B /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E778E833894D4A584CBFA8C /* Pods-rx-sign-in-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-sign-in-ios.release.xcconfig"; path = "Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios.release.xcconfig"; sourceTree = "<group>"; };
+		45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rx_sign_in_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF4F3AD439F0B74A1B1C8BF /* Pods-rx-sign-in-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-sign-in-ios.debug.xcconfig"; path = "Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D2F08AE52263A93D0036849B /* rx-sign-in-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-sign-in-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F08AE82263A93D0036849B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F08AEA2263A93D0036849B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8682F941F8D298A908C41D /* Pods_rx_sign_in_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71BF1146BF0F46C969A71970 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FF4F3AD439F0B74A1B1C8BF /* Pods-rx-sign-in-ios.debug.xcconfig */,
+				2E778E833894D4A584CBFA8C /* Pods-rx-sign-in-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A37DBB8CA7A5C2E8F5D167C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2F08ADC2263A93D0036849B = {
 			isa = PBXGroup;
 			children = (
 				D2F08AE72263A93D0036849B /* rx-sign-in-ios */,
 				D2F08AE62263A93D0036849B /* Products */,
+				71BF1146BF0F46C969A71970 /* Pods */,
+				A37DBB8CA7A5C2E8F5D167C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2F08AF72263A93F0036849B /* Build configuration list for PBXNativeTarget "rx-sign-in-ios" */;
 			buildPhases = (
+				EEB4EFD6AC826820319E9067 /* [CP] Check Pods Manifest.lock */,
 				D2F08AE12263A93D0036849B /* Sources */,
 				D2F08AE22263A93D0036849B /* Frameworks */,
 				D2F08AE32263A93D0036849B /* Resources */,
+				9D60BA12AF76255091C8DD40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D60BA12AF76255091C8DD40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB4EFD6AC826820319E9067 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rx-sign-in-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2F08AE12263A93D0036849B /* Sources */ = {
@@ -280,6 +358,7 @@
 		};
 		D2F08AF82263A93F0036849B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF4F3AD439F0B74A1B1C8BF /* Pods-rx-sign-in-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +377,7 @@
 		};
 		D2F08AF92263A93F0036849B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E778E833894D4A584CBFA8C /* Pods-rx-sign-in-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
