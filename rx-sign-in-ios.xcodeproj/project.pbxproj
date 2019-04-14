@@ -20,6 +20,10 @@
 		D2F08B122263AC610036849B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B0E2263AC610036849B /* StringExtension.swift */; };
 		D2F08B132263AC610036849B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B102263AC610036849B /* Button.swift */; };
 		D2F08B162263AC8B0036849B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2F08B152263AC8B0036849B /* Localizable.strings */; };
+		D2F08B1A2263AD5C0036849B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B192263AD5C0036849B /* LoginViewModel.swift */; };
+		D2F08B1D2263AD650036849B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B1B2263AD640036849B /* LoginView.swift */; };
+		D2F08B1E2263AD650036849B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B1C2263AD640036849B /* PrimaryButton.swift */; };
+		D2F08B212263AD9D0036849B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B202263AD9D0036849B /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		D2F08B0E2263AC610036849B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D2F08B102263AC610036849B /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		D2F08B152263AC8B0036849B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D2F08B192263AD5C0036849B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D2F08B1B2263AD640036849B /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D2F08B1C2263AD640036849B /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		D2F08B202263AD9D0036849B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +100,14 @@
 		D2F08AE72263A93D0036849B /* rx-sign-in-ios */ = {
 			isa = PBXGroup;
 			children = (
-				D2F08B142263AC750036849B /* Resources */,
-				D2F08B002263AC310036849B /* Styles */,
-				D2F08B072263AC3B0036849B /* Libraries */,
-				D2F08AFF2263AC190036849B /* ViewControllers */,
+				D2F08B1F2263AD9D0036849B /* Configuration */,
 				D2F08B0B2263AC610036849B /* Tools */,
+				D2F08B002263AC310036849B /* Styles */,
+				D2F08AFF2263AC190036849B /* ViewControllers */,
+				D2F08B172263AD410036849B /* Views */,
+				D2F08B182263AD4D0036849B /* ViewModels */,
+				D2F08B142263AC750036849B /* Resources */,
+				D2F08B072263AC3B0036849B /* Libraries */,
 				D2F08AE82263A93D0036849B /* AppDelegate.swift */,
 				D2F08AF12263A93F0036849B /* LaunchScreen.storyboard */,
 				D2F08AF42263A93F0036849B /* Info.plist */,
@@ -171,6 +182,31 @@
 				D2F08B152263AC8B0036849B /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2F08B172263AD410036849B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2F08B1B2263AD640036849B /* LoginView.swift */,
+				D2F08B1C2263AD640036849B /* PrimaryButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2F08B182263AD4D0036849B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D2F08B192263AD5C0036849B /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D2F08B1F2263AD9D0036849B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D2F08B202263AD9D0036849B /* Colors.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +339,12 @@
 				D2F08AFE2263ABFB0036849B /* LoginViewController.swift in Sources */,
 				D2F08B122263AC610036849B /* StringExtension.swift in Sources */,
 				D2F08B062263AC310036849B /* StyleConstants.swift in Sources */,
+				D2F08B1E2263AD650036849B /* PrimaryButton.swift in Sources */,
 				D2F08AE92263A93D0036849B /* AppDelegate.swift in Sources */,
+				D2F08B212263AD9D0036849B /* Colors.swift in Sources */,
 				D2F08B132263AC610036849B /* Button.swift in Sources */,
+				D2F08B1D2263AD650036849B /* LoginView.swift in Sources */,
+				D2F08B1A2263AD5C0036849B /* LoginViewModel.swift in Sources */,
 				D2F08B042263AC310036849B /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

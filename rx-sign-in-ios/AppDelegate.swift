@@ -18,8 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - UIApplicationDelegate
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        return true
-    }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        let viewController = ViewController(viewModel: LoginViewModelImp())
+        let navigationViewController = UINavigationController(rootViewController: viewController)
+        
+        window?.rootViewController = navigationViewController
+        return true    }
 
     func applicationWillResignActive(_ application: UIApplication) {
     }
