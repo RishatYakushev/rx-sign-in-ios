@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  rx-sign-in-ios
+
+
+  Created by Rishat Yakushev on 13/02/2019.
+  Copyright © 2019 Rishat Yakushev. All rights reserved.
+*/
+
+"Authorization" = "Авторизация";
+"Mail" = "Почта";
+"Password" = "Пароль";
+"Forgot your password?" = "Забыли пароль?";
+"Sign in" = "Войти";
+"I don't have an account yet. Create" = "У меня еще нет аккаунта. Создать.";
