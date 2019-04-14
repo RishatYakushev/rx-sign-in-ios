@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D8682F941F8D298A908C41D /* Pods_rx_sign_in_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */; };
 		D2F08AE92263A93D0036849B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AE82263A93D0036849B /* AppDelegate.swift */; };
-		D2F08AEB2263A93D0036849B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AEA2263A93D0036849B /* ViewController.swift */; };
-		D2F08AEE2263A93D0036849B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AEC2263A93D0036849B /* Main.storyboard */; };
 		D2F08AF02263A93F0036849B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AEF2263A93F0036849B /* Assets.xcassets */; };
 		D2F08AF32263A93F0036849B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AF12263A93F0036849B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -21,8 +19,6 @@
 		8FF4F3AD439F0B74A1B1C8BF /* Pods-rx-sign-in-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-sign-in-ios.debug.xcconfig"; path = "Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D2F08AE52263A93D0036849B /* rx-sign-in-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-sign-in-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F08AE82263A93D0036849B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2F08AEA2263A93D0036849B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2F08AED2263A93D0036849B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2F08AEF2263A93F0036849B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F08AF22263A93F0036849B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F08AF42263A93F0036849B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +42,6 @@
 				8FF4F3AD439F0B74A1B1C8BF /* Pods-rx-sign-in-ios.debug.xcconfig */,
 				2E778E833894D4A584CBFA8C /* Pods-rx-sign-in-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F08AE82263A93D0036849B /* AppDelegate.swift */,
-				D2F08AEA2263A93D0036849B /* ViewController.swift */,
-				D2F08AEC2263A93D0036849B /* Main.storyboard */,
 				D2F08AEF2263A93F0036849B /* Assets.xcassets */,
 				D2F08AF12263A93F0036849B /* LaunchScreen.storyboard */,
 				D2F08AF42263A93F0036849B /* Info.plist */,
@@ -151,7 +144,6 @@
 			files = (
 				D2F08AF32263A93F0036849B /* LaunchScreen.storyboard in Resources */,
 				D2F08AF02263A93F0036849B /* Assets.xcassets in Resources */,
-				D2F08AEE2263A93D0036849B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F08AEB2263A93D0036849B /* ViewController.swift in Sources */,
 				D2F08AE92263A93D0036849B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +212,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2F08AEC2263A93D0036849B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2F08AED2263A93D0036849B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2F08AF12263A93F0036849B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
