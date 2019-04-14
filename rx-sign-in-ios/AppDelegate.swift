@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationViewController = UINavigationController(rootViewController: viewController)
         
         window?.rootViewController = navigationViewController
-        return true    }
+        return true
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
     }
