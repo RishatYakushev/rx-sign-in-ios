@@ -12,7 +12,7 @@ import RxSwift
 
 // MARK: - Передаем сразу на MainTrade (Trade Safe)
 
-protocol LoginViewModel {
+protocol SignInViewModel {
     func signIn() -> Driver<Bool>
     
     var userName: Variable<String> { get }
@@ -21,7 +21,7 @@ protocol LoginViewModel {
     var isLoginEnabled: Driver<Bool> { get }
 }
 
-class LoginViewModelImp: LoginViewModel {
+class SignInViewModelImp: SignInViewModel {
     init() { }
 
     public let userName: Variable<String> = Variable<String>("")
@@ -30,8 +30,8 @@ class LoginViewModelImp: LoginViewModel {
     // MARK: - Объединяем Observable у userName, userPassword
     
     var isLoginEnabled: Driver<Bool> {
-        return Observable.combineLatest(userPassword.asObservable(), userName.asObservable()) { user, password in
-            !user.isEmpty && !password.isEmpty
+        return Observable.combineLatest(userPassword.asObservable(), userName.asObservable()) { password, user in
+            !user.isEmpty && !password.isEmpty && user.isValidEmail()
         }.asDriver(onErrorJustReturn: false)
     }
     

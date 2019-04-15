@@ -11,7 +11,7 @@
 		D2F08AE92263A93D0036849B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AE82263A93D0036849B /* AppDelegate.swift */; };
 		D2F08AF02263A93F0036849B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AEF2263A93F0036849B /* Assets.xcassets */; };
 		D2F08AF32263A93F0036849B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AF12263A93F0036849B /* LaunchScreen.storyboard */; };
-		D2F08AFE2263ABFB0036849B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AFD2263ABFB0036849B /* LoginViewController.swift */; };
+		D2F08AFE2263ABFB0036849B /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AFD2263ABFB0036849B /* SignInController.swift */; };
 		D2F08B042263AC310036849B /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B012263AC310036849B /* NavigationBar.swift */; };
 		D2F08B052263AC310036849B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B022263AC310036849B /* DesignSystem.swift */; };
 		D2F08B062263AC310036849B /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B032263AC310036849B /* StyleConstants.swift */; };
@@ -35,7 +35,7 @@
 		D2F08AEF2263A93F0036849B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F08AF22263A93F0036849B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F08AF42263A93F0036849B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2F08AFD2263ABFB0036849B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2F08AFD2263ABFB0036849B /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		D2F08B012263AC310036849B /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D2F08B022263AC310036849B /* DesignSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		D2F08B032263AC310036849B /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		D2F08AFF2263AC190036849B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D2F08AFD2263ABFB0036849B /* LoginViewController.swift */,
+				D2F08AFD2263ABFB0036849B /* SignInController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 				D2F08B052263AC310036849B /* DesignSystem.swift in Sources */,
 				D2F08B112263AC610036849B /* UIColorExtension.swift in Sources */,
 				D2F08B0A2263AC3B0036849B /* With.swift in Sources */,
-				D2F08AFE2263ABFB0036849B /* LoginViewController.swift in Sources */,
+				D2F08AFE2263ABFB0036849B /* SignInController.swift in Sources */,
 				D2F08B122263AC610036849B /* StringExtension.swift in Sources */,
 				D2F08B062263AC310036849B /* StyleConstants.swift in Sources */,
 				D2F08B1E2263AD650036849B /* PrimaryButton.swift in Sources */,

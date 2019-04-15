@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SignInController.swift
 //  rx-sign-in-ios
 //
 //  Created by Rishat Yakushev on 14/04/2019.
@@ -11,19 +11,19 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
     
     // MARK: - Instance Properties
     
-    private let loginView = LoginView()
+    private let signInView = SignInView()
     
-    public let viewModel: LoginViewModel
+    public let viewModel: SignInViewModel
     
     // MARK: - Initializers
     
     private let disposeBag: DisposeBag = .init()
     
-    init(viewModel: LoginViewModel) {
+    init(viewModel: SignInViewModel) {
         self.viewModel = viewModel
         
         super.init(nibName: nil, bundle: nil)
@@ -36,30 +36,24 @@ class ViewController: UIViewController {
     // MARK: - Instance Methods
     
     @discardableResult
-    private func configureOutput(_ viewModel: LoginViewModel) -> [Disposable] {
+    private func configureOutput(_ viewModel: SignInViewModel) -> [Disposable] {
         return [
-            loginView.mailTextField.rx.text.orEmpty.bind(to: viewModel.userName),
+            signInView.mailTextField.rx.text.orEmpty.bind(to: viewModel.userName),
             
-            loginView.passwordTextField.rx.text.orEmpty.bind(to: viewModel.userPassword),
+            signInView.passwordTextField.rx.text.orEmpty.bind(to: viewModel.userPassword),
             
             // MARK: -
             
-            viewModel.isLoginEnabled.asObservable().bind(to: loginView.signInButton.rx.isEnabled)
+            viewModel.isLoginEnabled.asObservable().bind(to: signInView.signInButton.rx.isEnabled)
         ]
     }
     
     // MARK: - TODO
     
-    //    private func checkEmail() {
-    //        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-    //        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-    //        sendButton.isEnabled = emailTest.evaluate(with: emailTextField.text)
-    //    }
-    
     private func setupLoginView() {
-        view.addSubview(loginView)
+        view.addSubview(signInView)
         
-        self.loginView.snp.makeConstraints { (make) in
+        self.signInView.snp.makeConstraints { (make) in
             make.edges.equalTo(view.snp.edges)
         }
     }

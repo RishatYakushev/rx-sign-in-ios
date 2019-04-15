@@ -11,7 +11,7 @@ import UIKit
 import SnapKit
 import RxSwift
 
-class LoginView: UIView {
+class SignInView: UIView {
     
     // MARK: - Nested Types
     
