@@ -10,7 +10,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-// MARK: - Передаем сразу на MainTrade (Trade Safe)
+// MARK: - Driver передает на main trade (Thread Safe)
 
 protocol SignInViewModel {
     func signIn() -> Driver<Bool>
