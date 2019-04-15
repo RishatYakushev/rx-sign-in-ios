@@ -31,7 +31,7 @@ class SignInViewModelImp: SignInViewModel {
     
     var isLoginEnabled: Driver<Bool> {
         return Observable.combineLatest(userPassword.asObservable(), userName.asObservable()) { password, user in
-            !user.isEmpty && !password.isEmpty && user.isValidEmail()
+            !user.isEmpty && !password.isEmpty && user.isValidEmail() && password.isValidPassword()
         }.asDriver(onErrorJustReturn: false)
     }
     
