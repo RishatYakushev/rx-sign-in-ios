@@ -20,4 +20,5 @@ enum Colors {
     static let white = UIColor(whiteByte: 255)
     static let disabled = UIColor(whiteByte: 136)
     static let blackText = UIColor(whiteByte: 0)
+    static let clearColor = UIColor.clear
 }

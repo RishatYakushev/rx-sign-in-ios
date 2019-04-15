@@ -28,6 +28,11 @@ class SignInView: UIView {
         
         static let mailTextFieldPlaceholder = "anykee@mail.ru"
         static let passwordTextFieldPlaceholder = "*********"
+        
+        static let signInButtonCornerRadius: CGFloat = 22
+        static let forgotPasswordButtonCornerRadius: CGFloat = 4
+        
+        static let forgotPasswordButtonBorderWidth: CGFloat = 1
     }
     
     // MARK: - Initializers
@@ -47,11 +52,11 @@ class SignInView: UIView {
     // MARK: - Instance Properties
     
     public lazy var scrollView: UIScrollView = with(.init()) {
-        $0.backgroundColor = UIColor.white
+        $0.backgroundColor = Colors.white
     }
     
     public lazy var contentView: UIView = with(.init()) {
-        $0.backgroundColor = UIColor.white
+        $0.backgroundColor = Colors.white
     }
     
     public lazy var mailLabel: UILabel = with(.init()) {
@@ -64,7 +69,7 @@ class SignInView: UIView {
     public lazy var mailTextField: UITextField = with(.init()) {
         $0.font = UIFont.systemFont(ofSize: 16)
         $0.borderStyle = .none
-        $0.backgroundColor = UIColor.clear
+        $0.backgroundColor = Colors.clearColor
         $0.placeholder = Constants.mailTextFieldPlaceholder
     }
     
@@ -77,14 +82,13 @@ class SignInView: UIView {
         $0.text = Constants.passwordLabelTitle
         $0.font = UIFont.systemFont(ofSize: 13)
         $0.textAlignment = .left
-        $0.numberOfLines = 0
     }
     
     public lazy var passwordTextField: UITextField = with(.init()) {
         $0.font = UIFont.systemFont(ofSize: 16)
         $0.isSecureTextEntry = true
         $0.borderStyle = .none
-        $0.backgroundColor = UIColor.clear
+        $0.backgroundColor = Colors.clearColor
         $0.placeholder = Constants.passwordTextFieldPlaceholder
     }
     
@@ -96,17 +100,17 @@ class SignInView: UIView {
         $0.setTitle(Constants.forgotButtonTitle, for: .normal)
         $0.setTitleColor(Colors.warmGray, for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 12)
-        $0.backgroundColor = .clear
-        $0.layer.cornerRadius = 4
-        $0.layer.borderWidth = 1
+        $0.backgroundColor = Colors.clearColor
+        $0.layer.cornerRadius = Constants.forgotPasswordButtonCornerRadius
+        $0.layer.borderWidth = Constants.forgotPasswordButtonBorderWidth
         $0.layer.borderColor = Colors.veryLightPink.cgColor
     }
     
     public lazy var signInButton: PrimaryButton = with(.init()) {
-        $0.setTitleColor(UIColor.white, for: .normal)
+        $0.setTitleColor(Colors.white, for: .normal)
         $0.setTitle(Constants.signInButtonTitle, for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        $0.layer.cornerRadius = 22
+        $0.layer.cornerRadius = Constants.signInButtonCornerRadius
     }
     
     public lazy var createAccountButton: UIButton = with(.init()) {
