@@ -1,25 +1,33 @@
 PODS:
+  - Alamofire (4.8.2)
+  - Gloss (2.1.1)
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
   - SnapKit (4.0.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - Gloss (~> 2.0)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Gloss
     - RxCocoa
     - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Gloss: 9df15229b2f6484c14752a738474fd2528b4c5cd
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 9069f29a6f936d4cb96fa55a4e71a1381f4a265b
+PODFILE CHECKSUM: 98989a0d7a2f75f12bef7d93b596475f589d9d90
 
 COCOAPODS: 1.6.1

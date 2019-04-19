@@ -10,5 +10,7 @@ target 'rx-sign-in-ios' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
+  pod 'Alamofire'
+  pod 'Gloss', '~> 2.0'
 
 end

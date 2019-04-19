@@ -23,6 +23,10 @@ class SignInViewController: UIViewController {
     
     private let disposeBag: DisposeBag = .init()
     
+    private lazy var swappiNetworking: SwappiNetworking = SwappiNetworkingImp(
+        networking: AppDelegate.networking
+    )
+    
     init(viewModel: SignInViewModel) {
         self.viewModel = viewModel
         
@@ -41,6 +45,14 @@ class SignInViewController: UIViewController {
             signInView.mailTextField.rx.text.orEmpty.bind(to: viewModel.userName),
             
             signInView.passwordTextField.rx.text.orEmpty.bind(to: viewModel.userPassword),
+            
+            signInView.signInButton.rx.tap.bind {
+                self.swappiNetworking.getPeople().subscribe(onSuccess: { [weak self] (emptyObject) in
+                    print(emptyObject)
+                }) { [weak self]  (error) in
+                    print(error)
+                }
+            },
             
             // MARK: -
             

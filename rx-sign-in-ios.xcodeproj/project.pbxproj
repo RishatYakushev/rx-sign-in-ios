@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2D8682F941F8D298A908C41D /* Pods_rx_sign_in_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */; };
+		D23E4C502269EC8B009B893A /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C4F2269EC8B009B893A /* Staging.swift */; };
+		D23E4C652269ECC1009B893A /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C532269ECC0009B893A /* TestModel.swift */; };
+		D23E4C662269ECC1009B893A /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C542269ECC0009B893A /* ListResponse.swift */; };
+		D23E4C672269ECC1009B893A /* SwappiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C572269ECC0009B893A /* SwappiRequest.swift */; };
+		D23E4C682269ECC1009B893A /* SwappiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C582269ECC0009B893A /* SwappiNetworking.swift */; };
+		D23E4C692269ECC1009B893A /* DataRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C5A2269ECC1009B893A /* DataRequest+Alamofire.swift */; };
+		D23E4C6A2269ECC1009B893A /* NetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C5D2269ECC1009B893A /* NetworkGateway.swift */; };
+		D23E4C6B2269ECC1009B893A /* RequestDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C5E2269ECC1009B893A /* RequestDescriptor.swift */; };
+		D23E4C6C2269ECC1009B893A /* NetworkAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C5F2269ECC1009B893A /* NetworkAdapters.swift */; };
+		D23E4C6D2269ECC1009B893A /* NetworkGatewayImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C612269ECC1009B893A /* NetworkGatewayImp.swift */; };
+		D23E4C6E2269ECC1009B893A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C622269ECC1009B893A /* NetworkRequest.swift */; };
+		D23E4C6F2269ECC1009B893A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C632269ECC1009B893A /* NetworkConstants.swift */; };
 		D2F08AE92263A93D0036849B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08AE82263A93D0036849B /* AppDelegate.swift */; };
 		D2F08AF02263A93F0036849B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AEF2263A93F0036849B /* Assets.xcassets */; };
 		D2F08AF32263A93F0036849B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F08AF12263A93F0036849B /* LaunchScreen.storyboard */; };
@@ -30,6 +42,18 @@
 		2E778E833894D4A584CBFA8C /* Pods-rx-sign-in-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-sign-in-ios.release.xcconfig"; path = "Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios.release.xcconfig"; sourceTree = "<group>"; };
 		45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rx_sign_in_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF4F3AD439F0B74A1B1C8BF /* Pods-rx-sign-in-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-sign-in-ios.debug.xcconfig"; path = "Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		D23E4C4F2269EC8B009B893A /* Staging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
+		D23E4C532269ECC0009B893A /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		D23E4C542269ECC0009B893A /* ListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		D23E4C572269ECC0009B893A /* SwappiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwappiRequest.swift; sourceTree = "<group>"; };
+		D23E4C582269ECC0009B893A /* SwappiNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwappiNetworking.swift; sourceTree = "<group>"; };
+		D23E4C5A2269ECC1009B893A /* DataRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		D23E4C5D2269ECC1009B893A /* NetworkGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkGateway.swift; sourceTree = "<group>"; };
+		D23E4C5E2269ECC1009B893A /* RequestDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDescriptor.swift; sourceTree = "<group>"; };
+		D23E4C5F2269ECC1009B893A /* NetworkAdapters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAdapters.swift; sourceTree = "<group>"; };
+		D23E4C612269ECC1009B893A /* NetworkGatewayImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkGatewayImp.swift; sourceTree = "<group>"; };
+		D23E4C622269ECC1009B893A /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		D23E4C632269ECC1009B893A /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		D2F08AE52263A93D0036849B /* rx-sign-in-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-sign-in-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F08AE82263A93D0036849B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F08AEF2263A93F0036849B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +103,88 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D23E4C4E2269EC80009B893A /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C4F2269EC8B009B893A /* Staging.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		D23E4C512269ECB8009B893A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C5B2269ECC1009B893A /* Domain */,
+				D23E4C522269ECC0009B893A /* Entity */,
+				D23E4C592269ECC1009B893A /* Library */,
+				D23E4C552269ECC0009B893A /* Usage */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D23E4C522269ECC0009B893A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C532269ECC0009B893A /* TestModel.swift */,
+				D23E4C542269ECC0009B893A /* ListResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D23E4C552269ECC0009B893A /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C562269ECC0009B893A /* Swappi */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
+		D23E4C562269ECC0009B893A /* Swappi */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C572269ECC0009B893A /* SwappiRequest.swift */,
+				D23E4C582269ECC0009B893A /* SwappiNetworking.swift */,
+			);
+			path = Swappi;
+			sourceTree = "<group>";
+		};
+		D23E4C592269ECC1009B893A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C5A2269ECC1009B893A /* DataRequest+Alamofire.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D23E4C5B2269ECC1009B893A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C5C2269ECC1009B893A /* Networking */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D23E4C5C2269ECC1009B893A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C5D2269ECC1009B893A /* NetworkGateway.swift */,
+				D23E4C5E2269ECC1009B893A /* RequestDescriptor.swift */,
+				D23E4C5F2269ECC1009B893A /* NetworkAdapters.swift */,
+				D23E4C602269ECC1009B893A /* Implementation */,
+				D23E4C622269ECC1009B893A /* NetworkRequest.swift */,
+				D23E4C632269ECC1009B893A /* NetworkConstants.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D23E4C602269ECC1009B893A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				D23E4C612269ECC1009B893A /* NetworkGatewayImp.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 		D2F08ADC2263A93D0036849B = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +206,7 @@
 		D2F08AE72263A93D0036849B /* rx-sign-in-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D23E4C512269ECB8009B893A /* Networking */,
 				D2F08B1F2263AD9D0036849B /* Configuration */,
 				D2F08B0B2263AC610036849B /* Tools */,
 				D2F08B002263AC310036849B /* Styles */,
@@ -204,6 +311,7 @@
 		D2F08B1F2263AD9D0036849B /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				D23E4C4E2269EC80009B893A /* Keys */,
 				D2F08B202263AD9D0036849B /* Colors.swift */,
 			);
 			path = Configuration;
@@ -221,6 +329,7 @@
 				D2F08AE22263A93D0036849B /* Frameworks */,
 				D2F08AE32263A93D0036849B /* Resources */,
 				9D60BA12AF76255091C8DD40 /* [CP] Embed Pods Frameworks */,
+				D23E4C712269F377009B893A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -287,6 +396,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -295,6 +406,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -303,6 +416,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D23E4C712269F377009B893A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 		EEB4EFD6AC826820319E9067 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -333,19 +463,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23E4C6B2269ECC1009B893A /* RequestDescriptor.swift in Sources */,
 				D2F08B052263AC310036849B /* DesignSystem.swift in Sources */,
+				D23E4C6C2269ECC1009B893A /* NetworkAdapters.swift in Sources */,
 				D2F08B112263AC610036849B /* UIColorExtension.swift in Sources */,
 				D2F08B0A2263AC3B0036849B /* With.swift in Sources */,
 				D2F08AFE2263ABFB0036849B /* SignInController.swift in Sources */,
 				D2F08B122263AC610036849B /* StringExtension.swift in Sources */,
+				D23E4C6D2269ECC1009B893A /* NetworkGatewayImp.swift in Sources */,
 				D2F08B062263AC310036849B /* StyleConstants.swift in Sources */,
 				D2F08B1E2263AD650036849B /* PrimaryButton.swift in Sources */,
+				D23E4C6E2269ECC1009B893A /* NetworkRequest.swift in Sources */,
+				D23E4C682269ECC1009B893A /* SwappiNetworking.swift in Sources */,
 				D2F08AE92263A93D0036849B /* AppDelegate.swift in Sources */,
+				D23E4C662269ECC1009B893A /* ListResponse.swift in Sources */,
 				D2F08B212263AD9D0036849B /* Colors.swift in Sources */,
+				D23E4C692269ECC1009B893A /* DataRequest+Alamofire.swift in Sources */,
 				D2F08B132263AC610036849B /* Button.swift in Sources */,
+				D23E4C6F2269ECC1009B893A /* NetworkConstants.swift in Sources */,
 				D2F08B1D2263AD650036849B /* LoginView.swift in Sources */,
+				D23E4C502269EC8B009B893A /* Staging.swift in Sources */,
+				D23E4C6A2269ECC1009B893A /* NetworkGateway.swift in Sources */,
+				D23E4C652269ECC1009B893A /* TestModel.swift in Sources */,
 				D2F08B1A2263AD5C0036849B /* LoginViewModel.swift in Sources */,
 				D2F08B042263AC310036849B /* NavigationBar.swift in Sources */,
+				D23E4C672269ECC1009B893A /* SwappiRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,6 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-// MARK: - Driver передает на main trade (Thread Safe)
-
 protocol SignInViewModel {
     func signIn() -> Driver<Bool>
     
@@ -22,13 +20,11 @@ protocol SignInViewModel {
 }
 
 class SignInViewModelImp: SignInViewModel {
-    init() { }
+    init() {}
 
     public let userName: Variable<String> = Variable<String>("")
     public let userPassword: Variable<String> = Variable<String>("")
-    
-    // MARK: - Объединяем Observable у userName, userPassword
-    
+        
     var isLoginEnabled: Driver<Bool> {
         return Observable.combineLatest(userPassword.asObservable(), userName.asObservable()) { password, user in
             !user.isEmpty && !password.isEmpty && user.isValidEmail() && password.isValidPassword()

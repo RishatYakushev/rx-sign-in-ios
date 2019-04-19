@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Instance Properties
 
     var window: UIWindow?
+    
+    static let networking = NetworkingGatewayImp(
+        sessionManager: SessionManager.default,
+        baseUrl: BaseConstants.Networking.baseURL,
+        prefix: "",
+        adapters: []
+    )
 
     // MARK: - UIApplicationDelegate
 
