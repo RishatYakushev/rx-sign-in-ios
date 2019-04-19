@@ -11,6 +11,8 @@ import RxCocoa
 
 public protocol SwappiNetworking {
     
+    // MARK: - Instance Methods
+
     func getPeople() -> Single<TestModel>
 }
 
