@@ -12,10 +12,10 @@ import RxSwift
 
 protocol SignInViewModel {
     func signIn() -> Driver<Bool>
-    
+
     var userName: Variable<String> { get }
     var userPassword: Variable<String> { get }
-    
+
     var isLoginEnabled: Driver<Bool> { get }
 }
 
@@ -24,13 +24,13 @@ class SignInViewModelImp: SignInViewModel {
 
     public let userName: Variable<String> = Variable<String>("")
     public let userPassword: Variable<String> = Variable<String>("")
-        
+
     var isLoginEnabled: Driver<Bool> {
         return Observable.combineLatest(userPassword.asObservable(), userName.asObservable()) { password, user in
             !user.isEmpty && !password.isEmpty && user.isValidEmail() && password.isValidPassword()
         }.asDriver(onErrorJustReturn: false)
     }
-    
+
     func signIn() -> Driver<Bool> {
         return Driver.just(true)
     }

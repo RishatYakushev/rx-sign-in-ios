@@ -9,16 +9,16 @@
 import UIKit
 
 public struct ViewStyling {
-    
+
     // MARK: - Nested Types
-    
+
     fileprivate enum Constants {
-        
+
         // MARK: - Nested Properties
-        
+
         static let navigationBarTitle = "Authorization".localized()
     }
-    
+
     public struct NavigationBar {
         public static let loginStyle: (UINavigationBar) -> Void = {
             $0.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17)]

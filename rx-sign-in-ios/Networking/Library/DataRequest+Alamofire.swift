@@ -9,19 +9,19 @@
 import Alamofire
 
 public extension DataRequest {
-    
+
     public static func responseSerializer(
-        
+
         // MARK: - Instance Methods
 
         options: JSONSerialization.ReadingOptions = .allowFragments)
         -> DataResponseSerializer<Data> {
-        return DataResponseSerializer { _, response, data, error in
-            
+        return DataResponseSerializer { _, response, data, _ in
+
             guard let validData = data, validData.count > 0 else {
                 return .failure(NetworkError.invalidJSON)
             }
-        
+
             let statusCode = response?.statusCode ?? 0
             if statusCode == NetworkConstants.unauthorizeCode {
                 return .failure(NetworkError.unauthorized)
@@ -32,14 +32,13 @@ public extension DataRequest {
             return .success(validData)
         }
     }
-    
+
     @discardableResult
     func baseResponseJSON(
         queue: DispatchQueue? = nil,
         options: JSONSerialization.ReadingOptions = .allowFragments,
         completionHandler: @escaping (DataResponse<Data>) -> Void)
-        -> Self
-    {
+        -> Self {
         return response(
             queue: queue,
             responseSerializer: DataRequest.responseSerializer(options: options),

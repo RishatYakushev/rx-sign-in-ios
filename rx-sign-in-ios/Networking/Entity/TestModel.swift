@@ -10,17 +10,17 @@ import Foundation
 import Gloss
 
 public struct TestModel: Glossy {
-    
+
     // MARK: - Instance Properties
 
-    public let categories : String?
-    
+    public let categories: String?
+
     // MARK: - Initializers
 
-    public init?(json: JSON){
+    public init?(json: JSON) {
         categories = "name" <~~ json
     }
-    
+
     // MARK: - Instance Methods
 
     public func toJSON() -> JSON? {

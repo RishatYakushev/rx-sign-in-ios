@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Instance Properties
 
     var window: UIWindow?
-    
+
     static let networking = NetworkingGatewayImp(
         sessionManager: SessionManager.default,
         baseUrl: BaseConstants.Networking.baseURL,
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         let viewController = SignInViewController(viewModel: SignInViewModelImp())
         let navigationViewController = UINavigationController(rootViewController: viewController)
-        
+
         window?.rootViewController = navigationViewController
         return true
     }

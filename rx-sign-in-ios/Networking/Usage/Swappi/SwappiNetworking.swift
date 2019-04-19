@@ -10,18 +10,18 @@ import RxSwift
 import RxCocoa
 
 public protocol SwappiNetworking {
-    
+
     // MARK: - Instance Methods
 
     func getPeople() -> Single<TestModel>
 }
 
 public class SwappiNetworkingImp {
-    
+
     // MARK: - Instance Properties
 
     private let networking: NetworkingGateway
-    
+
     // MARK: - Instance Methods
 
     public init(networking: NetworkingGateway) {
@@ -30,7 +30,7 @@ public class SwappiNetworkingImp {
 }
 
 extension SwappiNetworkingImp: SwappiNetworking {
-    
+
     // MARK: - Instance Methods
 
     public func getPeople() -> Single<TestModel> {

@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol NetworkingAdapter {
-    
+
     // MARK: - Instance Methods
 
     func header(descriptor: RequestDescriptor) -> [String: String]

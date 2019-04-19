@@ -9,7 +9,7 @@
 import Foundation
 
 public struct ListResponse<T: Codable>: Codable {
-    
+
     // MARK: - Instance Properties
 
     public var count: Int

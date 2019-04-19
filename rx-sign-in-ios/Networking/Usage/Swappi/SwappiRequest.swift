@@ -10,15 +10,15 @@ import Alamofire
 import Foundation
 
 public class SwappiRequest: NetworkingRequest {
-    
+
     // MARK: - Instance Properties
 
     public typealias ResponseType = TestModel
-    
+
     // MARK: - Initializers
 
-    init(){}
-    
+    init() {}
+
     // MARK: - Instance Methods
 
     public func getRequestDescriptor() -> RequestDescriptor {

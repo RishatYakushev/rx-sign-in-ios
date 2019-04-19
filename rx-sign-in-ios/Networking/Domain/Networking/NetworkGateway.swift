@@ -23,7 +23,7 @@ enum UploadMimeType: String {
 }
 
 public protocol NetworkingGateway {
-    
+
     // MARK: - Instance Methods
 
     func json<T: NetworkingRequest>(_ request: T) -> Single<T.ResponseType>

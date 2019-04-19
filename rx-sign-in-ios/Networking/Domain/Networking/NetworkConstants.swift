@@ -17,6 +17,6 @@ public enum NetworkError: Error {
 
 public struct NetworkConstants {
     public static let successCodes: Range<Int> = 200..<300
-    
+
     public static let unauthorizeCode: Int = 401
 }

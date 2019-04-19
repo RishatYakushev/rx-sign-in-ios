@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 enum Colors {
-    
+
     // MARK: - Type Properties
-    
+
     static let warmGray = UIColor(redByte: 121, greenByte: 121, blueByte: 121)
     static let tangerine = UIColor(redByte: 255, greenByte: 155, blueByte: 0)
     static let veryLightPink = UIColor(redByte: 235, greenByte: 235, blueByte: 235)

@@ -10,18 +10,18 @@ import Foundation
 import Gloss
 
 public protocol NetworkingRequest {
-    
+
     // MARK: - Nested Types
 
     associatedtype ResponseType: Glossy
-    
+
     // MARK: - Instance Methods
 
     func getRequestDescriptor() -> RequestDescriptor
 }
 
 public protocol UploadNetworkingRequest: NetworkingRequest {
-    
+
     // MARK: - Instance Properties
 
     var uploadData: Data { get }

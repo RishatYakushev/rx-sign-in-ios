@@ -11,21 +11,21 @@ import RxSwift
 import Gloss
 
 public class NetworkingGatewayImp {
-    
+
     // MARK: - Instance Properties
-    
+
     private let sessionManager: SessionManager
     private let baseUrl: URL
     private let prefix: String
     private let adapters: [NetworkingAdapter]
-    
+
     private let queue: DispatchQueue = .init(
         label: String(describing: NetworkingGateway.self),
         qos: .background
     )
-    
+
     // MARK: - Initializers
-    
+
     public init(
         sessionManager: SessionManager,
         baseUrl: URL,
@@ -37,9 +37,9 @@ public class NetworkingGatewayImp {
         self.prefix = prefix
         self.adapters = adapters
     }
-    
+
     // MARK: - Instance Methods
-    
+
     private func createUrlRequest<T: NetworkingRequest>(_ request: T) throws -> URLRequest {
         let requestDescriptor = request.getRequestDescriptor()
         let url = baseUrl
@@ -49,26 +49,26 @@ public class NetworkingGatewayImp {
         urlRequest = try applyAdapter(urlRequest, requestDescriptor: requestDescriptor)
         return try requestDescriptor.encoding.encode(urlRequest, with: requestDescriptor.params)
     }
-    
+
     private func applyAdapter(
         _ urlRequest: URLRequest,
         requestDescriptor: RequestDescriptor
         ) throws -> URLRequest {
         var urlRequest = urlRequest
-        
+
         adapters.forEach { adapter in
             let headers = adapter.header(descriptor: requestDescriptor)
             headers.forEach { key, value in
                 urlRequest.setValue(value, forHTTPHeaderField: key)
             }
         }
-        
+
         return urlRequest
     }
 }
 
 extension NetworkingGatewayImp: NetworkingGateway {
-    
+
     // MARK: - Instance Methods
 
     public func json<T: NetworkingRequest>(_ request: T) -> Single<T.ResponseType> {
@@ -80,7 +80,7 @@ extension NetworkingGatewayImp: NetworkingGateway {
                 return object
             }
     }
-    
+
     public func data<T: NetworkingRequest>(_ request: T) -> Single<Data> {
         return Single.create(subscribe: { (single) -> Disposable in
             do {
@@ -95,11 +95,10 @@ extension NetworkingGatewayImp: NetworkingGateway {
                             single(.error(error))
                         }
                     })
-            }
-            catch {
+            } catch {
                  single(.error(error))
             }
-            
+
             return Disposables.create()
         })
     }

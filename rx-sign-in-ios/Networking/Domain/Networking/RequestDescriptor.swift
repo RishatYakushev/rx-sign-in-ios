@@ -9,14 +9,14 @@
 import Alamofire
 
 public struct RequestDescriptor {
-    
+
     // MARK: - Instance Properties
 
     public let path: String
     public let method: HTTPMethod
     public let params: Parameters
     public let encoding: ParameterEncoding
-    
+
     // MARK: - Initializers
 
     public init(
