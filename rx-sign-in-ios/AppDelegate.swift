@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     // MARK: -
-    
+
     static let networking = NetworkingGatewayImp(
         sessionManager: SessionManager.default,
         baseUrl: BaseConstants.Networking.baseURL,

@@ -11,16 +11,26 @@ import RxCocoa
 import RxSwift
 
 protocol SignInViewModel {
-    func signIn() -> Driver<Bool>
+
+    // MARK: - Instance Properties
 
     var userName: Variable<String> { get }
     var userPassword: Variable<String> { get }
 
     var isLoginEnabled: Driver<Bool> { get }
+
+    // MARK: - Instance Methods
+
+    func signIn() -> Driver<Bool>
 }
 
 class SignInViewModelImp: SignInViewModel {
+
+    // MARK: - Initializers
+
     init() {}
+
+    // MARK: - Instance Properties
 
     public let userName: Variable<String> = Variable<String>("")
     public let userPassword: Variable<String> = Variable<String>("")
@@ -30,6 +40,8 @@ class SignInViewModelImp: SignInViewModel {
             !user.isEmpty && !password.isEmpty && user.isValidEmail() && password.isValidPassword()
         }.asDriver(onErrorJustReturn: false)
     }
+
+    // MARK: - Instance Methods
 
     func signIn() -> Driver<Bool> {
         return Driver.just(true)
