@@ -6,7 +6,7 @@
   Copyright © 2019 Rishat Yakushev. All rights reserved.
 */
 
-"Authorization" = "Авторизация";
+"Authorization" = "Authorization";
 "Mail" = "Почта";
 "Password" = "Пароль";
 "Forgot your password?" = "Забыли пароль?";

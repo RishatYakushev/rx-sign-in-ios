@@ -1,17 +1,15 @@
 //
-//  LoginView.swift
+//  LoginViewSnapKit.swift
 //  rx-sign-in-ios
 //
 //  Created by Rishat Yakushev on 11/04/2019.
 //  Copyright © 2019 Rishat Yakushev. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import SnapKit
-import RxSwift
 
-class SignInView: UIView {
+class LoginViewSnapKit: UIView {
 
     // MARK: - Nested Types
 
@@ -19,14 +17,14 @@ class SignInView: UIView {
 
         // MARK: - Nested Properties
 
-        static let navigationBarTitle = "Authorization".localized()
-        static let mailLabelTitle = "Mail".localized()
-        static let passwordLabelTitle = "Password".localized()
-        static let forgotButtonTitle = "Forgot your password?".localized()
-        static let signInButtonTitle = "Sign in".localized()
-        static let createAccountButtonTitle = "I don't have an account yet. Create".localized()
+        static let navigationBarTitle = "Authorization"
+        static let mailLabelTitle = "Mail"
+        static let passwordLabelTitle = "Password"
+        static let forgotButtonTitle = "Forgot your password?"
+        static let signInButtonTitle = "Sign in"
+        static let createAccountButtonTitle = "I don't have an account yet. Create"
 
-        static let mailTextFieldPlaceholder = "anykee@mail.ru"
+        static let mailTextFieldPlaceholder = "weakMiddle@gmail.com"
         static let passwordTextFieldPlaceholder = "*********"
 
         static let signInButtonCornerRadius: CGFloat = 22
@@ -192,7 +190,7 @@ class SignInView: UIView {
             $0.top.equalTo(self.separatorView).inset(18)
             $0.bottom.equalTo(self.passwordSeparatorView).inset(8)
             $0.height.equalTo(30)
-            $0.width.equalTo(113)
+            $0.width.equalTo(162)
         }
 
         self.signInButton.snp.makeConstraints {

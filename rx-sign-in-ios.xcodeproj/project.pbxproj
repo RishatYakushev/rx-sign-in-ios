@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2D8682F941F8D298A908C41D /* Pods_rx_sign_in_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */; };
+		D22DCD2123882311002CB5D2 /* LoginViewStevia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22DCD2023882310002CB5D2 /* LoginViewStevia.swift */; };
 		D23E4C502269EC8B009B893A /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C4F2269EC8B009B893A /* Staging.swift */; };
 		D23E4C652269ECC1009B893A /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C532269ECC0009B893A /* TestModel.swift */; };
 		D23E4C662269ECC1009B893A /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E4C542269ECC0009B893A /* ListResponse.swift */; };
@@ -33,7 +34,7 @@
 		D2F08B132263AC610036849B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B102263AC610036849B /* Button.swift */; };
 		D2F08B162263AC8B0036849B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2F08B152263AC8B0036849B /* Localizable.strings */; };
 		D2F08B1A2263AD5C0036849B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B192263AD5C0036849B /* LoginViewModel.swift */; };
-		D2F08B1D2263AD650036849B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B1B2263AD640036849B /* LoginView.swift */; };
+		D2F08B1D2263AD650036849B /* LoginViewSnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B1B2263AD640036849B /* LoginViewSnapKit.swift */; };
 		D2F08B1E2263AD650036849B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B1C2263AD640036849B /* PrimaryButton.swift */; };
 		D2F08B212263AD9D0036849B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F08B202263AD9D0036849B /* Colors.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		2E778E833894D4A584CBFA8C /* Pods-rx-sign-in-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-sign-in-ios.release.xcconfig"; path = "Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios.release.xcconfig"; sourceTree = "<group>"; };
 		45BCDB5845CC3A274B641402 /* Pods_rx_sign_in_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rx_sign_in_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF4F3AD439F0B74A1B1C8BF /* Pods-rx-sign-in-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-sign-in-ios.debug.xcconfig"; path = "Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		D22DCD2023882310002CB5D2 /* LoginViewStevia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewStevia.swift; sourceTree = "<group>"; };
 		D23E4C4F2269EC8B009B893A /* Staging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
 		D23E4C532269ECC0009B893A /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		D23E4C542269ECC0009B893A /* ListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 		D2F08B102263AC610036849B /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		D2F08B152263AC8B0036849B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D2F08B192263AD5C0036849B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		D2F08B1B2263AD640036849B /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D2F08B1B2263AD640036849B /* LoginViewSnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewSnapKit.swift; sourceTree = "<group>"; };
 		D2F08B1C2263AD640036849B /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		D2F08B202263AD9D0036849B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -294,7 +296,8 @@
 		D2F08B172263AD410036849B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D2F08B1B2263AD640036849B /* LoginView.swift */,
+				D2F08B1B2263AD640036849B /* LoginViewSnapKit.swift */,
+				D22DCD2023882310002CB5D2 /* LoginViewStevia.swift */,
 				D2F08B1C2263AD640036849B /* PrimaryButton.swift */,
 			);
 			path = Views;
@@ -393,24 +396,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-rx-sign-in-ios/Pods-rx-sign-in-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,7 +422,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"error: SwiftLint does not exist, download it from https://github.com/SwiftLint\"\nexit 1\nfi\n";
+			shellScript = "
+
+";
 		};
 		EEB4EFD6AC826820319E9067 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -479,9 +471,10 @@
 				D23E4C662269ECC1009B893A /* ListResponse.swift in Sources */,
 				D2F08B212263AD9D0036849B /* Colors.swift in Sources */,
 				D23E4C692269ECC1009B893A /* DataRequest+Alamofire.swift in Sources */,
+				D22DCD2123882311002CB5D2 /* LoginViewStevia.swift in Sources */,
 				D2F08B132263AC610036849B /* Button.swift in Sources */,
 				D23E4C6F2269ECC1009B893A /* NetworkConstants.swift in Sources */,
-				D2F08B1D2263AD650036849B /* LoginView.swift in Sources */,
+				D2F08B1D2263AD650036849B /* LoginViewSnapKit.swift in Sources */,
 				D23E4C502269EC8B009B893A /* Staging.swift in Sources */,
 				D23E4C6A2269ECC1009B893A /* NetworkGateway.swift in Sources */,
 				D23E4C652269ECC1009B893A /* TestModel.swift in Sources */,

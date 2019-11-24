@@ -15,7 +15,9 @@ class SignInViewController: UIViewController {
 
     // MARK: - Instance Properties
 
-    private let signInView = SignInView()
+    // View change here, just set LoginViewStevia() or LoginViewSnapKit()
+    
+    private let signInView = LoginViewStevia()
 
     public let viewModel: SignInViewModel
 

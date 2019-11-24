@@ -12,5 +12,6 @@ target 'rx-sign-in-ios' do
   pod 'RxCocoa', '~> 4.0'
   pod 'Alamofire'
   pod 'Gloss', '~> 2.0'
+  pod 'SteviaLayout'
 
 end
